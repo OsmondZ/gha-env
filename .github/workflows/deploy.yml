@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - master
       - dev
 env:
   MONGODB_DB_NAME: gha-demo
@@ -13,7 +14,6 @@ jobs:
       MONGODB_USERNAME: osmond
       MONGODB_PASSWORD: PpvPAXfF1O5yOl6A
       PORT: 8080
-    environment: testing
     runs-on: ubuntu-latest
     steps:
       - name: Get Code

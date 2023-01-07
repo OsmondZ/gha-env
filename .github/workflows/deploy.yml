@@ -9,11 +9,11 @@ env:
 jobs:
   test:
     env:
-    MONGODB_CLUSTER_ADDRESS: cluster0.bxl4dwv.mongodb.net
-    MONGODB_USERNAME: osmond
-    MONGODB_PASSWORD: PpvPAXfF1O5yOl6A
-    PORT: 8080
-    # environment: testing
+      MONGODB_CLUSTER_ADDRESS: cluster0.bxl4dwv.mongodb.net
+      MONGODB_USERNAME: osmond
+      MONGODB_PASSWORD: PpvPAXfF1O5yOl6A
+      PORT: 8080
+    environment: testing
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
